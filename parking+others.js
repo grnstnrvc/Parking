@@ -3,8 +3,8 @@ class ParkingLot {
     this.capacity = capacity;
     this.cars = {};
     this.prices = {
-      perHour: 100,
-      perHourSerbian: 50,
+      perHour: 200,
+      perHourSerbian: 150,
     };
   }
 
@@ -17,7 +17,7 @@ class ParkingLot {
 
   park(car) {
     if (Object.keys(this.cars).length === this.capacity) {
-      return "Parking lot is full";
+      return "Parking je pun";
     }
     this.cars[car] = new Date();
     return `${car} is parked successfully`;
